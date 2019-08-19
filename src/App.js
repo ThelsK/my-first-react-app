@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
+import Title from './components/Title'
+import LightSwitch from './components/LightSwitch'
 import './App.css';
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Welcome to Codaisseur!
-        </p>
+                </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,8 +19,12 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+                </a>
       </header>
+      <main>
+        <Title content="Awesome Title" />
+        <LightSwitch />
+      </main>
     </div>
   );
 }
